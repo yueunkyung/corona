@@ -1,38 +1,39 @@
 @import "vars";
-html,body {
+html,
+body {
     height: 100%;
 }
 body {
-    font-family:'Titillium Web', 'Noto Sans KR',  sans-serif;
+    font-family: "Titillium Web", "Noto Sans KR", sans-serif;
     overflow: auto;
 }
 #myChart {
-    width:1200px;
-    height:600px;
+    width: 1200px;
+    height: 600px;
     margin: 100px auto 0;
 }
 #datePicker {
     position: absolute;
-    right:50px;
-    top:50px;
-    width:400px;
+    right: 50px;
+    top: 50px;
+    width: 400px;
     #date {
-        width:100%;
+        width: 100%;
         height: 40px;
         outline: none;
-        padding:0 10px;
+        padding: 0 10px;
         box-sizing: border-box;
-        border:1px solid rgba(0,0,0,0.2);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         margin-bottom: 15px;
     }
     #calendar {
-        display: none;
-        width:100%;
-        padding:15px;
+        // display: none;
+        width: 100%;
+        padding: 15px;
         background-color: #fff;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-        border:1px solid rgba(0,0,0,0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
         .header {
             display: flex;
@@ -48,20 +49,25 @@ body {
         }
         .days {
             ul {
-                li:first-child {background-color: rgb(179, 2, 2);}
-                li:last-child {background-color: rgb(1, 145, 241);}
+                li:first-child {
+                    background-color: rgb(179, 2, 2);
+                }
+                li:last-child {
+                    background-color: rgb(1, 145, 241);
+                }
             }
         }
-        .dates, .days {
+        .dates,
+        .days {
             ul {
                 display: flex;
                 flex-wrap: wrap;
                 li {
-                    flex-basis:calc(100% / 7 - 4px);
+                    flex-basis: calc(100% / 7 - 4px);
                     margin: 2px;
                     background-color: #111;
                     border-radius: 100%;
-                    color:#fff;
+                    color: #fff;
                     min-height: 50px;
                     display: flex;
                     justify-content: center;
@@ -76,16 +82,16 @@ body {
                         background-color: transparent;
                     }
                     &::before {
-                        content: '';
+                        content: "";
                         padding-top: 100%;
                     }
                     span {
                         display: flex;
-                        color:#fff;
+                        color: #fff;
                         position: absolute;
-                        left:0;
-                        top:0;
-                        width:100%;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
                         height: 100%;
                         justify-content: center;
                         align-items: center;
