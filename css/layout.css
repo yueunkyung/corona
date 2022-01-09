@@ -16,6 +16,8 @@ body { font-family: "Titillium Web", "Noto Sans KR", sans-serif; overflow: auto;
 
 #datePicker #calendar .header .yearAndMonth .month { font-weight: 700; }
 
+#datePicker #calendar .days ul { text-transform: uppercase; }
+
 #datePicker #calendar .days ul li:first-child { background-color: #b30202; }
 
 #datePicker #calendar .days ul li:last-child { background-color: #0191f1; }
@@ -23,6 +25,8 @@ body { font-family: "Titillium Web", "Noto Sans KR", sans-serif; overflow: auto;
 #datePicker #calendar .dates ul, #datePicker #calendar .days ul { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 #datePicker #calendar .dates ul li, #datePicker #calendar .days ul li { -ms-flex-preferred-size: calc(100% / 7 - 4px); flex-basis: calc(100% / 7 - 4px); margin: 2px; background-color: #111; border-radius: 100%; color: #fff; min-height: 50px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; cursor: pointer; }
+
+#datePicker #calendar .dates ul li.pickedDay, #datePicker #calendar .days ul li.pickedDay { background-color: #0b18d6 !important; }
 
 #datePicker #calendar .dates ul li.today, #datePicker #calendar .days ul li.today { background-color: #e70133; }
 

@@ -49,6 +49,7 @@ body {
         }
         .days {
             ul {
+                text-transform: uppercase;
                 li:first-child {
                     background-color: rgb(179, 2, 2);
                 }
@@ -74,6 +75,9 @@ body {
                     align-items: center;
                     position: relative;
                     cursor: pointer;
+                    &.pickedDay {
+                        background-color: rgb(11, 24, 214) !important;
+                    }
                     &.today {
                         background-color: rgb(231, 1, 51);
                     }
